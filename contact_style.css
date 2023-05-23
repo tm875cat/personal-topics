@@ -1,0 +1,297 @@
+body {
+    background-color: #F8F4EC;
+}
+
+/* 載入字型 */
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
+}
+
+/* 載入字型 */
+/* ------------頁首----------- */
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu li:hover a{
+    color: #DBB12A;
+}
+header {
+    width: 100%;
+}
+
+.menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .menu_logo {
+    margin-bottom: -5px;
+}
+
+.menu li:hover {
+    border-bottom: 2px #A48458 solid;
+}
+
+.menu li {
+    transition: border-bottom 0.3s;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: end;
+}
+
+/* 菜單超連結 */
+.menu li a {
+
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #39250A;
+    display: block;
+    text-decoration: none;
+}
+
+/* 菜單超連結 */
+/* ------------頁首----------- */
+/* -------------聯絡我們-------------- */
+/* 立體文字 */
+.store_dimensional_poster {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 實心文字 */
+.dimensional_solid {
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 166px;
+    color: #DBB12A;
+    position: relative;
+
+}
+
+/* 實心文字 */
+/* 空心文字 */
+.dimensional_empty {
+    position: absolute;
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 166px;
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    top: 0;
+    left: 6px;
+}
+
+/* 空心文字 */
+
+/* 立體文字 */
+/* 聯絡我們大字 */
+.contact_dimensional_poster {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 聯絡我們大字 */
+
+.contact_us_Windows_area {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 聯絡視窗 */
+.contact_us_Windows {
+    width: 515px;
+    height: 549px;
+    background: #FADEC2;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+/* 聯絡視窗 */
+
+/* 隱藏數字輸入框的小箭頭 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 隱藏數字輸入框的小箭頭 */
+/* 表單輸入框 */
+.contact_us_input input {
+    width: 368px;
+    height: 37px;
+    background: #FBC898;
+    border: 1px solid rgba(208, 191, 191, 0.59);
+    border-radius: 3px;
+
+}
+
+/* 表單輸入框 */
+
+/* 表單內項目 */
+.contact_item:nth-child(1) {
+    margin-top: 20px;
+}
+
+/* 表單內項目 */
+/* 表單內文字 */
+.contact_us_text {
+    margin-bottom: 10px;
+    width: 368px;
+}
+
+.contact_us_text h3 {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/* 表單內文字 */
+/* send按鈕 */
+.contact_us_btn button {
+    width: 334px;
+    height: 31px;
+    background: #CDB99E;
+    border: none;
+    font-family: 'Inknut Antiqua';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 31px;
+}
+
+/* send按鈕 */
+/* -------------聯絡我們-------------- */
+/* -------------頁尾------------------ */
+footer {
+    width: 100%;
+    display: flex;
+    background: #A48458;
+    justify-content: space-between;
+}
+
+/* 頁尾LOGO */
+.footer_logo_pic img {
+    margin-top: 30px;
+}
+
+/* QA */
+.question_answer {
+    width: 300px;
+
+}
+
+.question_answer h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+}
+
+.question_answer h3 a {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4C2B20;
+    text-decoration: none;
+
+}
+
+/* 社群媒體 */
+.media_ikon {
+    width: 40%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* 社群媒體 */
+/* QA */
+/* 聯絡資訊 */
+.information {
+    padding: 10px;
+}
+
+.information p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4C2B20;
+}
+
+/* 聯絡資訊 */
+
+/* -------------頁尾------------------ */
+/* 至頂按鈕--------------------------- */
+.to_top_btn {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+}
+
+.to_top_solid {
+    width: 80px;
+    font-family: 'Antonio';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    color: #DBB12A;
+    position: relative;
+}
+
+.to_top_empty {
+    font-family: 'Antonio';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    /* 簍空效果 */
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    /* 簍空效果 */
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+/* 三角 */
+.to_top_triangle {
+    position: absolute;
+    top: 0;
+    right: 3.5px;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #DBB12A;
+
+}
+
+
+
+
+/* 至頂按鈕--------------------------- */

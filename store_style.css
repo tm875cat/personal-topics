@@ -1,0 +1,388 @@
+  /* 載入字型 */
+  @font-face {
+      font-family: "Inknut Antiqua";
+      src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
+  }
+
+  /* 載入字型 */
+
+
+  /* 隱藏數字輸入框的小箭頭 */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  /* 立體文字 -------*/
+  /* 實心文字 */
+  .dimensional_solid {
+      font-family: 'Antonio';
+      font-weight: 800;
+      font-size: 128px;
+      line-height: 166px;
+      color: #DBB12A;
+      position: relative;
+
+  }
+
+  /* 實心文字 */
+  /* 空心文字 */
+  .dimensional_empty {
+      position: absolute;
+      font-family: 'Antonio';
+      font-weight: 800;
+      font-size: 128px;
+      line-height: 166px;
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      top: 0;
+      left: 6px;
+      white-space: nowrap;
+
+  }
+
+  /* 空心文字 */
+  /* 立體文字 -------*/
+  /* 隱藏數字輸入框的小箭頭 */
+  body {
+      background-color: #F8F4EC;
+  }
+
+  /* ------------頁首----------- */
+  a {
+      text-decoration: none;
+      transition: 0.5s;
+  }
+
+  .menu li:hover a {
+      color: #DBB12A;
+  }
+
+  header {
+      width: 100%;
+  }
+
+  .menu {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .menu .menu_logo {
+      margin-bottom: -5px;
+  }
+
+  .menu li:hover {
+      border-bottom: 2px #A48458 solid;
+  }
+
+  .menu li {
+      transition: border-bottom 0.3s;
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-bottom: 1%;
+      display: flex;
+      align-items: end;
+  }
+
+  /* 菜單超連結 */
+  .menu li a {
+
+      font-family: 'Noto Serif CJK TC';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: #39250A;
+      display: block;
+      text-decoration: none;
+  }
+
+  /* 菜單超連結 */
+  /* ------------頁首----------- */
+  /* ------------------ 商店大字區---------------- */
+  .store_poster_area {
+      margin-top: 100px;
+      margin-bottom: 150px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  /* ------------------ 商店大字區---------------- */
+  /* -------------------商品頁面區---------------------- */
+  .store_page_area {
+      position: relative;
+      margin-top: 100px;
+      margin-bottom: 200px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+  }
+
+  /* 右邊文字區 */
+  .store_text_area {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  .commodity_name {
+      top: -10px;
+      left: -25px;
+      position: absolute;
+      font-family: 'Inria Serif';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+  }
+
+  /* 價格 */
+  .price {
+      bottom: -10px;
+      right: -15px;
+      position: absolute;
+      font-family: 'Inria Serif';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+  }
+
+  /* 價格 */
+  /* 商品名稱及介紹 */
+  .commodity_name_color {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 486px;
+      height: 69.79px;
+      background: #FADEC2;
+      margin-bottom: 50px;
+  }
+
+  .commodity_name_color p {
+      font-family: 'Noto Serif CJK TC';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: #000000;
+  }
+
+  /* 商品名稱及介紹 */
+  /* ----表單內容設定---- */
+
+  .order_now_color {
+      position: relative;
+      box-sizing: border-box;
+      padding-top: 10px;
+      width: 498px;
+      height: 216px;
+      background: #FADEC2;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+  }
+
+  /* 表單左上標題 */
+  .order_now_title {
+      top: -10px;
+      left: -25px;
+      position: absolute;
+      font-family: 'Inter';
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+  }
+
+  /* 表單左上標題 */
+  /* 表單內項目 */
+
+  .order_now_item {
+      margin-top: 30px;
+      margin-right: 100px;
+      display: flex;
+  }
+
+  /* 表單內項目 */
+
+  .order_now_item label {
+      display: block;
+      font-family: 'Inter';
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+  }
+
+  .order_now_item input {
+      width: 251px;
+      border: none;
+      border-bottom: 2px solid black;
+      background-color: transparent;
+  }
+
+  /* send 按鈕 */
+  .order_now_btn {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-family: 'Inria Serif';
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 17px;
+      width: 73px;
+      height: 26px;
+      background-color: #FBC898;
+      color: #000000;
+      border: none;
+  }
+
+  /* send 按鈕 */
+
+  /* ----表單內容設定---- */
+  /* back按鈕 */
+  .back_btn {
+      top: -100px;
+      left: 70px;
+      position: absolute;
+  }
+
+  /* back按鈕 */
+  /* next按鈕 */
+  .next_btn_area {
+      display: flex;
+      justify-content: end;
+  }
+
+  .next_btn {
+      margin-top: 50px;
+      width: 128px;
+  }
+
+  .next_btn img {
+      width: 100%;
+  }
+
+
+
+  /* next按鈕 */
+  /* -------------------商品頁面區---------------------- */
+  /* -------------頁尾------------------ */
+  footer {
+      width: 100%;
+      display: flex;
+      background: #A48458;
+      justify-content: space-between;
+  }
+
+  /* 頁尾LOGO */
+  .footer_logo_pic img {
+      margin-top: 30px;
+  }
+
+  /* QA */
+  .question_answer {
+      width: 300px;
+
+  }
+
+  .question_answer h3 {
+      margin-top: 25px;
+      margin-bottom: 15px;
+
+  }
+
+  .question_answer h3 a {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #4C2B20;
+      text-decoration: none;
+
+  }
+
+
+  /* 社群媒體 */
+  .media_ikon {
+      width: 40%;
+      font-size: 24px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  /* 社群媒體 */
+  /* QA */
+  /* 聯絡資訊 */
+  .information {
+      padding: 10px;
+  }
+
+  .information p {
+      margin-top: 10px;
+      margin-left: 10px;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #4C2B20;
+  }
+
+  /* 聯絡資訊 */
+
+  /* -------------頁尾------------------ */
+  /* 至頂按鈕--------------------------- */
+  .to_top_btn {
+      position: fixed;
+      bottom: 60px;
+      right: 100px;
+  }
+
+  .to_top_solid {
+      width: 80px;
+      font-family: 'Antonio';
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 83px;
+      color: #DBB12A;
+      position: relative;
+  }
+
+  .to_top_empty {
+      font-family: 'Antonio';
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 83px;
+      /* 簍空效果 */
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      /* 簍空效果 */
+      position: absolute;
+      top: 0;
+      left: 3px;
+  }
+
+  /* 三角 */
+  .to_top_triangle {
+      position: absolute;
+      top: 0;
+      right: 3.5px;
+      width: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid #DBB12A;
+
+  }
+
+
+
+
+  /* 至頂按鈕--------------------------- */

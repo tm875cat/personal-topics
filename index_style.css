@@ -1,0 +1,578 @@
+  /* 載入字型 */
+  @font-face {
+      font-family: "Inknut Antiqua";
+      src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
+  }
+
+  /* 載入字型 */
+  /* ------------頁首----------- */
+  a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu li:hover a{
+    color: #DBB12A;
+}
+  header {
+      width: 100%;
+  }
+
+  .menu {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .menu .menu_logo {
+      margin-bottom: -5px;
+  }
+
+  .menu li:hover {
+      border-bottom: 2px #A48458 solid;
+  }
+
+  .menu li {
+      transition: border-bottom 0.3s;
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-bottom: 1%;
+      display: flex;
+      align-items: end;
+  }
+
+  /* 菜單超連結 */
+  .menu li a {
+
+      font-family: 'Noto Serif CJK TC';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      color: #39250A;
+      display: block;
+      text-decoration: none;
+  }
+
+  /* 菜單超連結 */
+  /* ------------頁首----------- */
+  body {
+      background-color: #F8F4EC;
+  }
+
+  /* -------------金工課程-------------- */
+  .course_area {
+      width: 100%;
+      margin-top: 100px;
+  }
+
+  .course {
+
+      position: relative;
+      width: 100%;
+  }
+
+  /* 金工課程背景圖 */
+  .metalworking_course_pic {
+      display: flex;
+      position: relative;
+      justify-content: end;
+      width: 100%;
+  }
+
+  /* 金工課程背景圖 */
+  /* 陰影 */
+  .shadow_block {
+      position: absolute;
+      width: 1005px;
+      height: 457px;
+      background: linear-gradient(270deg, #060404 -4.6%, rgba(6, 4, 4, 0.52) -4.6%, rgba(6, 4, 4, 0) 102%);
+      opacity: 1;
+      transition: 1s;
+  }
+
+  .shadow_block:hover {
+      opacity: 0;
+    
+  }
+
+  /* 陰影 */
+  /* 金工課程按鈕 */
+  .metalworking_course button {
+      transition: 1s;
+      position: absolute;
+      width: 356px;
+      height: 100px;
+      right: 0;
+      bottom: -100px;
+      border: none;
+      background: #DBB12A;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: #4C2B20;
+      font-family: 'Noto Serif CJK TC';
+  }
+
+  .metalworking_course button:hover {
+      width: 456px;
+      background-color: #c28a1a;
+
+
+
+  }
+
+  /* 金工課程按鈕 */
+  /* 裝飾色塊 */
+  .course_color_block {
+      position: absolute;
+      width: 475px;
+      height: 97px;
+      background: #AE8B0E;
+      bottom: -45px;
+      z-index: -1;
+  }
+
+  /* 裝飾色塊 */
+  /* 金工課程大字報 */
+  .character_poster {
+      position: absolute;
+      transform: rotate(90deg);
+      left: 110px;
+      z-index: 1;
+      transition: 1s;
+  }
+
+  .character_poster:hover {
+      transform: rotate(0deg);
+      translate: 0px -150px;
+  }
+
+  .character_poster:hover .solid_font {
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      font-family: 'Antonio';
+  }
+
+  .character_poster:hover .empty_font {
+      color: #DBB12A;
+
+  }
+
+  .solid_font {
+      font-family: 'Antonio';
+      font-weight: 400;
+      font-size: 128px;
+      line-height: 166px;
+      color: #DBB12A;
+      transition: 1s;
+
+  }
+
+  .empty_font {
+      /* 文字透明但外框不透明 */
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      /* 文字透明但外框不透明 */
+      font-family: 'Antonio';
+      font-weight: 400;
+      font-size: 128px;
+      line-height: 166px;
+      transition: 1s;
+  }
+
+  /* 金工課程大字報 */
+  /* -------------金工課程-------------- */
+
+  /* -------------關於我們-------------- */
+  .about_us_area {
+      width: 100%;
+      margin-top: 300px;
+  }
+
+  .about_us {
+      position: relative;
+      width: 100%;
+  }
+
+  /* 關於我們背景圖 */
+  .about_us_pic {
+      display: flex;
+      position: relative;
+      width: 100%;
+  }
+
+  /* 關於我們背景圖 */
+  /* 關於我們大字報 */
+  .about_us_poster {
+      position: absolute;
+      right: 100px;
+      top: -100px;
+      z-index: 1;
+  }
+
+  .about_us_poster:hover .empty_font {
+      color: #DBB12A;
+  }
+
+  .about_us_poster:hover .solid_font {
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      font-family: 'Antonio';
+
+  }
+
+  /* 關於我們大字報 */
+  /* 關於我們按鈕*/
+  .about_us_btn button {
+      position: absolute;
+      width: 350px;
+      height: 70px;
+      left: 0;
+      bottom: -70px;
+      border: none;
+      background: #DBB12A;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: #4C2B20;
+      font-family: 'Noto Serif CJK TC';
+      padding-left: 200px;
+      transition: 1s;
+  }
+  .about_us_btn button:hover{
+    width: 500px;
+    background-color: #c28a1a;
+  }
+
+  /* 關於我們按鈕*/
+  /* 色塊 */
+  .about_us_color_block {
+      position: absolute;
+      width: 475px;
+      height: 97px;
+      background: #AE8B0E;
+      right: 0px;
+      bottom: -45px;
+      z-index: -1;
+  }
+
+  /* 色塊 */
+  /* -------------關於我們-------------- */
+  /* -------------商店------------------ */
+  .store_area {
+      margin-top: 100px;
+      width: 100%;
+  }
+
+  .store_area a {
+      text-decoration: none;
+  }
+
+  /* 立體文字 */
+  .store_dimensional_poster {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  /* 實心文字 */
+  .dimensional_solid {
+      font-family: 'Antonio';
+      font-weight: 800;
+      font-size: 128px;
+      line-height: 166px;
+      color: #DBB12A;
+      position: relative;
+
+  }
+
+  /* 實心文字 */
+  /* 空心文字 */
+  .dimensional_empty {
+      position: absolute;
+      font-family: 'Antonio';
+      font-weight: 800;
+      font-size: 128px;
+      line-height: 166px;
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      top: 0;
+      left: 6px;
+  }
+
+  /* 空心文字 */
+
+  /* 立體文字 */
+
+  /* -------------商店------------------ */
+  /* 商品清單 */
+  .store_list {
+      margin-top: 70px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+  }
+
+  /* 商品清單 */
+  /* 商品卡片偶數偏移 */
+  .store_card:nth-child(odd) {
+      margin-bottom: 50px;
+  }
+
+  /* 商品卡片偶數偏移 */
+  /* 商品卡片奇數偏移 */
+  .store_card:nth-child(even) {
+      margin-top: 80px;
+  }
+
+  /* 商品卡片奇數偏移 */
+  .store_card {
+      width: 300px;
+  }
+
+  .store_pic img {
+      width: 100%;
+  }
+
+  /* 商品卡片文字 */
+  .store_text {
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  .store_text h3 {
+      margin-top: -12px;
+      font-family: 'Inknut Antiqua';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 52px;
+      color: #000000;
+  }
+
+  /* 商品卡片文字 */
+  /* more按鈕 */
+  .more_btn {
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .more_btn button {
+      width: 128px;
+      height: 49px;
+      background: #CDB99E;
+      border-radius: 3px;
+      font-family: 'Inknut Antiqua';
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 52px;
+      color: #4C2B20;
+      border: none;
+  }
+
+  /* more按鈕 */
+  /* -------------商店------------------ */
+  /* -------------聯絡我們-------------- */
+  /* 聯絡我們大字 */
+  .contact_dimensional_poster {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  /* 聯絡我們大字 */
+
+  .contact_us_Windows_area {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  /* 聯絡視窗 */
+  .contact_us_Windows {
+      width: 515px;
+      height: 549px;
+      background: #FADEC2;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 80px;
+  }
+
+  /* 聯絡視窗 */
+
+  /* 隱藏數字輸入框的小箭頭 */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  /* 隱藏數字輸入框的小箭頭 */
+  /* 表單輸入框 */
+  .contact_us_input input {
+      width: 368px;
+      height: 37px;
+      background: #FBC898;
+      border: 1px solid rgba(208, 191, 191, 0.59);
+      border-radius: 3px;
+
+  }
+
+  /* 表單輸入框 */
+
+  /* 表單內項目 */
+  .contact_item:nth-child(1) {
+      margin-top: 20px;
+  }
+
+  /* 表單內項目 */
+  /* 表單內文字 */
+  .contact_us_text {
+      margin-bottom: 10px;
+      width: 368px;
+  }
+
+  .contact_us_text h3 {
+      font-family: 'Inter';
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+  }
+
+  /* 表單內文字 */
+  /* send按鈕 */
+  .contact_us_btn button {
+      width: 334px;
+      height: 31px;
+      background: #CDB99E;
+      border: none;
+      font-family: 'Inknut Antiqua';
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 31px;
+  }
+
+  /* send按鈕 */
+  /* -------------聯絡我們-------------- */
+  /* -------------頁尾------------------ */
+  footer {
+      width: 100%;
+      display: flex;
+      background: #A48458;
+      justify-content: space-between;
+  }
+
+  /* 頁尾LOGO */
+  .footer_logo_pic img {
+      margin-top: 30px;
+  }
+
+  /* QA */
+  .question_answer {
+      width: 300px;
+
+  }
+
+  .question_answer h3 {
+      margin-top: 25px;
+      margin-bottom: 15px;
+
+  }
+
+  .question_answer h3 a {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #4C2B20;
+      text-decoration: none;
+
+  }
+
+  /* 社群媒體 */
+  .media_ikon {
+      width: 40%;
+      font-size: 24px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+
+  }
+
+  /* 社群媒體 */
+  /* QA */
+  /* 聯絡資訊 */
+  .information {
+      padding: 10px;
+  }
+
+  .information p {
+      margin-top: 10px;
+      margin-left: 10px;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #4C2B20;
+  }
+
+  /* 聯絡資訊 */
+
+  /* -------------頁尾------------------ */
+  /* 至頂按鈕--------------------------- */
+  .to_top_btn {
+      position: fixed;
+      bottom: 60px;
+      right: 100px;
+  }
+
+  .to_top_solid {
+      width: 80px;
+      font-family: 'Antonio';
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 83px;
+      color: #DBB12A;
+      position: relative;
+  }
+
+  .to_top_empty {
+      font-family: 'Antonio';
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 83px;
+      /* 簍空效果 */
+      color: transparent;
+      -webkit-text-stroke: 1px #DBB12A;
+      /* 簍空效果 */
+      position: absolute;
+      top: 0;
+      left: 3px;
+  }
+
+  /* 三角 */
+  .to_top_triangle {
+      position: absolute;
+      top: 0;
+      right: 3.5px;
+      width: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid #DBB12A;
+
+  }
+
+
+
+
+  /* 至頂按鈕--------------------------- */

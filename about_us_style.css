@@ -1,0 +1,375 @@
+body {
+    background-color: #F8F4EC;
+}
+
+/* 載入字型 */
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
+}
+
+/* 載入字型 */
+
+/* 立體文字 -------*/
+/* 實心文字 */
+.dimensional_solid {
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 166px;
+    color: #DBB12A;
+    position: relative;
+
+}
+
+/* 實心文字 */
+/* 空心文字 */
+.dimensional_empty {
+    position: absolute;
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 166px;
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    top: 0;
+    left: 6px;
+    white-space: nowrap;
+
+}
+
+/* 空心文字 */
+/* 立體文字 -------*/
+
+
+/* ------------頁首----------- */
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu li:hover a{
+    color: #DBB12A;
+}
+header {
+    width: 100%;
+}
+
+.menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .menu_logo {
+    margin-bottom: -5px;
+}
+
+.menu li:hover {
+    border-bottom: 2px #A48458 solid;
+}
+
+.menu li {
+    transition: border-bottom 0.3s;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: end;
+}
+
+/* 菜單超連結 */
+.menu li a {
+
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #39250A;
+    display: block;
+    text-decoration: none;
+}
+
+/* 菜單超連結 */
+/* ------------頁首----------- */
+
+/* 關於我們 ---------------*/
+.about_us_area {
+    box-sizing: border-box;
+    margin-top: 200px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 立體文字 */
+.about_us_dimensional_poster {
+
+    position: absolute;
+    top: -130px;
+    left: -100px;
+}
+
+/* 立體文字 */
+/* 文字區域 */
+.text_color_block {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 712px;
+    height: 159px;
+    background: rgba(251, 200, 152, 0.51);
+}
+
+.text_color_block p {
+    margin-top: 40px;
+    margin-left: -20px;
+    width: 700px;
+    height: 87px;
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #A48458;
+}
+
+/* 文字區域 */
+
+
+/* 關於我們-------------- */
+/* 關於品牌--------------- */
+.about_set_area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+
+/* 關於品牌色塊 */
+.color_block {
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    margin-top: 130px;
+    width: 522.63px;
+    height: 136px;
+    background: #F5D5B2;
+}
+
+/* 關於品牌標題 */
+.poster {
+    position: absolute;
+    top: -25px;
+    left: -60px;
+}
+
+/* ---------------小字體效果----------------- */
+/* 小實心字 */
+.solid_font {
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 41px;
+    color: #DBB12A;
+}
+
+/* 小實心字 */
+/* 小空心字 */
+.empty_font {
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 41px;
+    /* 樓空 */
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    /* 樓空 */
+}
+
+/* 小空心字 */
+/* ---------------小字體效果----------------- */
+/* 關於品牌標題 */
+/* 關於品牌內文 */
+.color_block p {
+    margin-top: 20px;
+    margin-left: -20px;
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.12em;
+    color: #A48458;
+}
+
+/* 關於品牌內文 */
+/* 關於品牌色塊 */
+
+/* 關於品牌--------------- */
+/* 分隔線 */
+.dividing_line {
+    width: 100%;
+    height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dividing_line hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid#FADEC2;
+}
+
+/* 分隔線 */
+
+
+/* 關於我------------------ */
+.adout_me_area {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+/* 色塊 */
+.about_me_view {
+    width: 486px;
+    height: 223px;
+}
+
+/* 標語 */
+.slogan {
+    position: absolute;
+    white-space: nowrap;
+    left: -10px;
+    bottom: -10px;
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #A48458;
+}
+
+/* 標語 */
+/* 色塊 */
+
+
+/* 關於我------------------ */
+
+
+/* -------------頁尾------------------ */
+footer {
+    width: 100%;
+    display: flex;
+    background: #A48458;
+    justify-content: space-between;
+}
+
+/* 頁尾LOGO */
+.footer_logo_pic img {
+    margin-top: 30px;
+}
+
+/* QA */
+.question_answer {
+    width: 300px;
+
+}
+
+.question_answer h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+}
+
+.question_answer h3 a {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4C2B20;
+    text-decoration: none;
+
+}
+
+
+/* 社群媒體 */
+.media_ikon {
+    width: 40%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* 社群媒體 */
+/* QA */
+/* 聯絡資訊 */
+.information {
+    padding: 10px;
+}
+
+.information p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4C2B20;
+}
+
+/* 聯絡資訊 */
+
+/* -------------頁尾------------------ */
+/* 至頂按鈕--------------------------- */
+.to_top_btn {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+}
+
+.to_top_solid {
+    width: 80px;
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 83px;
+    color: #DBB12A;
+    position: relative;
+}
+
+.to_top_empty {
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 83px;
+    /* 簍空效果 */
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    /* 簍空效果 */
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+/* 三角 */
+.to_top_triangle {
+    position: absolute;
+    top: 0;
+    right: 3.5px;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #DBB12A;
+
+}
+
+/* 至頂按鈕--------------------------- */

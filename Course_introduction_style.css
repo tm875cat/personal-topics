@@ -1,0 +1,333 @@
+body {
+    background-color: #F8F4EC;
+}
+/* 載入字型 */
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
+}
+/* 載入字型 */
+
+/* ------------頁首----------- */
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu li:hover a{
+    color: #DBB12A;
+}
+header {
+    width: 100%;
+}
+
+.menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .menu_logo {
+    margin-bottom: -5px;
+}
+
+.menu li:hover {
+    border-bottom: 2px #A48458 solid;
+}
+
+.menu li {
+    transition: border-bottom 0.3s;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: end;
+}
+
+/* 菜單超連結 */
+.menu li a {
+
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #39250A;
+    display: block;
+    text-decoration: none;
+}
+
+/* 菜單超連結 */
+/* ------------頁首----------- */
+/* -------------立體文字 -------*/
+/* 實心文字 */
+.dimensional_solid {
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 166px;
+    color: #DBB12A;
+    position: relative;
+
+}
+
+/* 實心文字 */
+/* 空心文字 */
+.dimensional_empty {
+    position: absolute;
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 166px;
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    top: 0;
+    left: 6px;
+    white-space: nowrap;
+
+}
+
+/* 空心文字 */
+/* --------------立體文字 -------*/
+/* 金工課程大字報區 */
+.course_introduction_poster_area {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+/* 課程大字報 */
+.course_poster {
+    margin-bottom: 100px;
+    margin-right: 10px;
+
+}
+
+/* 課程大字報 */
+/* 介紹大字報 */
+.introduction_poster {
+    margin-top: 100px;
+
+}
+
+/* 介紹大字報 */
+
+/* 金工課程大字報區 */
+/* 金工課程背景區 */
+.course_introduction_pic_area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 金工課程背景區 */
+
+/*  金工課程介紹文字區------------*/
+/* 金工課程介紹色塊標題 */
+.course_introduction_title {
+    top: -60px;
+    left: -70px;
+    display: flex;
+    position: absolute;
+    gap: 20px;
+}
+
+.course_introduction_title_solid {
+
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 83px;
+    color: #DBB12A;
+}
+
+.course_introduction_title_empty {
+
+    font-family: 'Antonio';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 83px;
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+
+}
+
+/* 金工課程介紹色塊標題 */
+
+.course_introduction_text_area {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.course_introduction_text_color {
+    position: relative;
+    width: 874px;
+    height: 343px;
+    background: #FADEC2;
+    padding: 50px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+}
+
+/* 金工課程介紹內部文字區塊 ------*/
+.course_introduction_text {
+    margin-left: 40px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*  金工課程介紹文字段落*/
+.course_introduction_text_color p {
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 122.02%;
+    color: #000000;
+}
+
+/*  金工課程介紹文字段落*/
+/* 金工課程介紹內部文字區塊 ------*/
+/* 金工課程介紹按鈕 */
+.course_introduction_btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 107px;
+    height: 33px;
+    background: #FBC898;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+/* 金工課程介紹按鈕 */
+
+
+
+/*  金工課程介紹文字區--------------*/
+
+
+
+/* -------------頁尾------------------ */
+footer {
+    width: 100%;
+    display: flex;
+    background: #A48458;
+    justify-content: space-between;
+}
+
+/* 頁尾LOGO */
+.footer_logo_pic img {
+    margin-top: 30px;
+}
+
+/* QA */
+.question_answer {
+    width: 300px;
+
+}
+
+.question_answer h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+}
+
+.question_answer h3 a {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4C2B20;
+    text-decoration: none;
+
+}
+
+
+/* 社群媒體 */
+.media_ikon {
+    width: 40%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* 社群媒體 */
+/* QA */
+/* 聯絡資訊 */
+.information {
+    padding: 10px;
+}
+
+.information p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4C2B20;
+}
+
+/* 聯絡資訊 */
+
+/* -------------頁尾------------------ */
+/* 至頂按鈕--------------------------- */
+.to_top_btn {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+}
+
+.to_top_solid {
+    width: 80px;
+    font-family: 'Antonio';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    color: #DBB12A;
+    position: relative;
+}
+
+.to_top_empty {
+    font-family: 'Antonio';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    /* 簍空效果 */
+    color: transparent;
+    -webkit-text-stroke: 1px #DBB12A;
+    /* 簍空效果 */
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+/* 三角 */
+.to_top_triangle {
+    position: absolute;
+    top: 0;
+    right: 3.5px;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #DBB12A;
+
+}
+
+/* 至頂按鈕--------------------------- */
