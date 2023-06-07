@@ -1,0 +1,80 @@
+/* 背景色 */
+body {
+    background-color: #F8F4EC;
+}
+
+/* 背景色 */
+
+/* 載入字型 */
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
+}
+
+/* 載入字型 */
+
+
+
+/* ------------頁首----------- */
+header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu{
+    
+}
+  /* 菜單超連結 */
+  .menu li a {
+    font-family: 'Noto Serif CJK TC';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #39250A;
+    display: block;
+    text-decoration: none;
+}
+
+/* 菜單超連結 */
+.header_list{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu li:hover a {
+        color: #DBB12A;
+    }
+
+    .menu {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+       
+      
+    }
+
+    .menu .menu_logo {
+        margin-bottom: -5px;
+    }
+
+    .menu li:hover {
+        border-bottom: 2px #A48458 solid;
+    }
+
+    .menu li {
+        transition: border-bottom 0.3s;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 1%;
+        display: flex;
+        align-items: end;
+    }
+
+  
+
+}
+
+/* ------------頁首----------- */
