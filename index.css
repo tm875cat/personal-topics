@@ -10,6 +10,10 @@ body {
     font-family: "Inknut Antiqua";
     src: url(Inknut_Antiqua/InknutAntiqua-Regular.ttf) format("opentype");
 }
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url(Antonio\static\Antonio-Regular.ttf) format("Antonio");
+}
 
 /* 載入字型 */
 a {
